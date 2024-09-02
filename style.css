@@ -1,0 +1,159 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+  background-color: rgb(48, 53, 55);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.title,
+.subtitle {
+  text-align: center;
+  margin: 0;
+}
+
+.bio,
+.conocimientos,
+.contacto {
+  max-width: 800px;
+  margin: 3rem auto;
+}
+
+.perfil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgb(58, 63, 65);
+  box-shadow: rgba(41, 28, 28, 0.7) 5px 5px 10px 5px;
+  border-radius: 1rem;
+}
+.perfil__nombre {
+  font-size: 24px;
+  font-weight: bold;
+}
+.perfil__bio {
+  width: 70%;
+  margin-right: 10px;
+}
+.perfil__foto {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.perfil__foto__imagen {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 1rem;
+  object-fit: cover;
+  image-rendering: smooth;
+}
+.perfil__redes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 30px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.perfil__redes__icons {
+  text-align: center;
+}
+.hover-svg {
+  transition: filter 0.3s ease;
+}
+
+.perfil__redes__logo:hover .hover-svg {
+  filter: invert(50%);
+}
+.conocimientos__tabla {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+  padding: 1rem;
+  background-color: #3a3f41;
+  box-shadow: rgba(41, 28, 28, 0.7) 5px 5px 10px 5px;
+  border-radius: 1rem;
+}
+
+.table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.table__header {
+  padding: 10px;
+  text-align: center;
+  background-color: #4a5053;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #4a5053;
+}
+
+td:hover {
+  background-color: #4a5053;
+  color: #fff;
+}
+
+.contacto__form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #3a3f41;
+  box-shadow: rgba(41, 28, 28, 0.7) 5px 5px 10px 5px;
+  border-radius: 1rem;
+}
+
+.contacto__form__content {
+  width: 50%;
+  margin-top: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  input,
+  textarea {
+    color:#4a5053;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #4a5053;
+    resize: none;
+  }
+
+  button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #645757;
+    background-color: #645757;
+    color: #fff;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #4a5053;
+    color: #fff;
+  }
+}
+
+.contacto__img {
+  width: 50%;
+  margin-top: 10px;
+  rotate: -35deg;
+}
