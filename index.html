@@ -4,145 +4,237 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil</title>
-    <link rel="icon" href="./img/favicon.ico" type="image/"/>
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Protest+Guerrilla&display=swap"
       rel="stylesheet"
     />
     <!-- averiguar si es necesario hacer el reset.css o el normalize.css -->
     <!-- <link rel="stylesheet" href="reset.css"> -->
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/187698871e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <section class="bio">
-      <h1 class="title">Trabajo practico 1</h1>
-      <h2 class="subtitle">Front End</h2>
+    <main>
+      <header>
+        <nav class="nav">
+          <div class="nav__logo">
+            <img
+              src="./assets/img/logo.png"
+              alt="Logo"
+              width="150px"
+              height="45px"
+            />
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#bio" class="nav__link">Bio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#conocimientos" class="nav__link">Conocimientos</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacto" class="nav__link">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-      <div class="perfil">
-        <div class="perfil__bio">
-          <h3 class="perfil__nombre">Pablo M. Sazycz</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit a
-            incidunt ducimus. Facilis iusto maxime porro, dicta molestiae
-            necessitatibus corporis!
-          </p>
-
-          <div class="perfil__redes">
-            <div class="perfil__redes__icons">
-              <a
-                class="perfil__redes__logo"
-                href="https://www.linkedin.com/in/pablosazycz/"
-                target="_blank"
-              >
-                <img
-                  src="./img/logo_linkedin.svg"
-                  alt="Linkedin Logo"
-                  class="hover-svg"
-                  width="20%"
-                  height="20%"
-                />
-              </a>
-            </div>
-
-            <div class="perfil__redes__icons">
-              <a
-                class="perfil__redes__logo"
-                href="https://github.com/pablosazycz"
-                target="_blank"
-              >
-                <img
-                  src="./img/github_logo_2.svg"
-                  alt="GitHub Logo"
-                  class="hover-svg"
-                  width="20%"
-                  height="20%"
-                />
-              </a>
-            </div>
+      <section class="landing">
+        <div class="landing__img"></div>
+        <div class="landing__saludo">
+          <div class="landing__saludo__contenido">
+            <h1>
+              Hola! <br />
+              Soy Pablo
+            </h1>
+            <div class="separador"><hr /></div>
+            <h2>
+              Web Designer &<br />
+              Backend Developer
+            </h2>
           </div>
         </div>
-        <div class="perfil__foto">
-          <img
-            class="perfil__foto__imagen"
-            alt="foto perfil"
-            src="https://avatars.githubusercontent.com/u/87151305?v=4"
-          />
+      </section>
+
+      <div class="card">
+        <div class="content">
+          <span></span>
+          <div class="img">
+            <img
+              alt="foto perfil"
+              src="https://avatars.githubusercontent.com/u/87151305?v=4"
+            />
+          </div>
+          <h4>#Un poco sobre mí</h4>
+          <p>
+            Soy un desarrollador web apasionado con un enfoque en crear
+            experiencias digitales intuitivas. Con experiencia tanto en diseño
+            como en backend, me encanta transformar ideas en productos
+            funcionales. He trabajado en proyectos desde la planificación hasta
+            la ejecución, utilizando tecnologías como HTML, CSS, JavaScript y
+            frameworks de backend como Node.js y .NET.
+          </p>
+          <p>
+            Mi misión es ayudar a las empresas a llevar su presencia digital al
+            siguiente nivel, resolviendo problemas complejos con soluciones
+            sencillas y elegantes. ¿Listo para transformar tu visión en
+            realidad?
+          </p>
+        </div>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/pablosazycz/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/pablosazycz" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="mailto:pablosazycz@gmail.comhola"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
         </div>
       </div>
-    </section>
-    <!-- TODO: Agregar imagenes a los conocimientos -->
-    <section class="conocimientos">
-      <h2 class="subtitle">Conocimientos</h2>
-      <div class="conocimientos__tabla">
-        <table class="table">
-          <thead class="table__header">
-            <th>Falta Conocer</th>
-            <th>Lo que sé</th>
-            <th>Experto en</th>
-          </thead>
-          <tbody class="table__body">
-            <tr>
-              <td>CSS</td>
-              <td>HTML</td>
-              <td>Jugar a la play</td>
-            </tr>
-            <tr>
-              <td>JavaScript</td>
-              <td>Java</td>
-              <td>Steam</td>
-            </tr>
-            <tr>
-              <td>PHP</td>
-              <td>C#</td>
-              <td>Cuevana</td>
-            </tr>
-            <tr>
-              <td>Python</td>
-              <td>MySql</td>
-            </tr>
-            <tr>
-              <td>React</td>
-              <td>SQL</td>
-            </tr>
-            <tr>
-              <td>Node.js</td>
-              <td>Git</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-    <!-- Poner seccion de habilidades o skills -->
-    <section class="contacto">
-      <h2 class="subtitle">Contacto</h2>
-      <div class="contacto__form">
-        <div class="contacto__form__content">
-          <h3>Enviame tu mensaje</h3>
-          <!-- hacer que el form envie un mail -->
-          <form action="">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" />
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
-            <label for="mensaje">Mensaje</label>
-            <textarea
-              name="mensaje"
-              id="mensaje"
-              cols="30"
-              rows="10"
-            ></textarea>
-            <button type="submit">Enviar</button>
-          </form>
+
+      <!-- <section class="bio">
+        <div class="perfil">
+          <div class="perfil__bio">
+            <h3 class="perfil__nombre">Pablo M. Sazycz</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit a
+              incidunt ducimus. Facilis iusto maxime porro, dicta molestiae
+              necessitatibus corporis!
+            </p>
+
+            <div class="perfil__redes">
+              <div class="perfil__redes__icons">
+                <a
+                  class="perfil__redes__logo"
+                  href="https://www.linkedin.com/in/pablosazycz/"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/logo_linkedin.svg"
+                    alt="Linkedin Logo"
+                    class="hover-svg"
+                    width="20%"
+                    height="20%"
+                  />
+                </a>
+              </div>
+
+              <div class="perfil__redes__icons">
+                <a
+                  class="perfil__redes__logo"
+                  href="https://github.com/pablosazycz"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/github_logo_2.svg"
+                    alt="GitHub Logo"
+                    class="hover-svg"
+                    width="20%"
+                    height="20%"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="perfil__foto">
+            <img
+              class="perfil__foto__imagen"
+              alt="foto perfil"
+              src="https://avatars.githubusercontent.com/u/87151305?v=4"
+            />
+          </div>
         </div>
-        <div class="contacto__img">
-          <img
-            src="./img/paper_plane_flying-2.png"
-            alt="img contacto"
-            width="80%"
-            height="80%"
-          />
+      </section> -->
+      <!-- TODO: Agregar imagenes a los conocimientos -->
+      <!-- <section class="conocimientos">
+        <h2 class="subtitle">Conocimientos</h2>
+        <div class="conocimientos__tabla">
+          <table class="table">
+            <thead class="table__header">
+              <th>Falta Conocer</th>
+              <th>Lo que sé</th>
+              <th>Experto en</th>
+            </thead>
+            <tbody class="table__body">
+              <tr>
+                <td>CSS</td>
+                <td>HTML</td>
+                <td>Jugar a la play</td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td>Java</td>
+                <td>Steam</td>
+              </tr>
+              <tr>
+                <td>PHP</td>
+                <td>C#</td>
+                <td>Cuevana</td>
+              </tr>
+              <tr>
+                <td>Python</td>
+                <td>MySql</td>
+              </tr>
+              <tr>
+                <td>React</td>
+                <td>SQL</td>
+              </tr>
+              <tr>
+                <td>Node.js</td>
+                <td>Git</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </div>
-    </section>
+      </section> -->
+      <!-- Poner seccion de habilidades o skills -->
+
+      <!-- <section class="contacto">
+        <h2 class="subtitle">Contacto</h2>
+        <div class="contacto__form">
+          <div class="contacto__form__content">
+            <h3>Enviame tu mensaje</h3>
+            <form action="">
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" id="nombre" />
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+          <div class="contacto__img">
+            <img
+              src="./assets/img/paper_plane_flying-2.png"
+              alt="img contacto"
+              width="80%"
+              height="80%"
+            />
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <footer>
+        <p>Trabajo practico 1 - Front End</p>
+      </footer> -->
+    </main>
   </body>
 </html>
