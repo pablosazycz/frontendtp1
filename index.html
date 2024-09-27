@@ -4,145 +4,232 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil</title>
-    <link rel="icon" href="./img/favicon.ico" type="image/"/>
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Protest+Guerrilla&display=swap"
       rel="stylesheet"
     />
     <!-- averiguar si es necesario hacer el reset.css o el normalize.css -->
     <!-- <link rel="stylesheet" href="reset.css"> -->
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/187698871e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <section class="bio">
-      <h1 class="title">Trabajo practico 1</h1>
-      <h2 class="subtitle">Front End</h2>
+    <main>
+      <header>
+        <nav class="nav">
+          <div class="nav__logo">
+            <img
+              src="./assets/img/logo.png"
+              alt="Logo"
+              width="150px"
+              height="45px"
+            />
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#bio" class="nav__link">Bio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#conocimientos" class="nav__link">Conocimientos</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacto" class="nav__link">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-      <div class="perfil">
-        <div class="perfil__bio">
-          <h3 class="perfil__nombre">Pablo M. Sazycz</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit a
-            incidunt ducimus. Facilis iusto maxime porro, dicta molestiae
-            necessitatibus corporis!
-          </p>
+      <section class="landing">
+        <div class="landing__img"></div>
+        <div class="landing__saludo">
+          <div class="landing__saludo__contenido">
+            <h1>
+              Hola! <br />
+              Soy Pablo
+            </h1>
+            <div class="separador"><hr /></div>
+            <h2>
+              Web Designer &<br />
+              Backend Developer
+            </h2>
+          </div>
+        </div>
+      </section>
 
-          <div class="perfil__redes">
-            <div class="perfil__redes__icons">
+      <div class="container">
+        <section class="bio" id="bio">
+          <div class="card">
+            <div class="content">
+              <span></span>
+              <div class="img">
+                <img
+                  alt="foto perfil"
+                  src="https://avatars.githubusercontent.com/u/87151305?v=4"
+                />
+              </div>
+              <h4>#Un poco sobre mí</h4>
+              <p>
+                Soy un desarrollador web apasionado con un enfoque en crear
+                experiencias digitales intuitivas. Con experiencia tanto en
+                diseño como en backend, me encanta transformar ideas en
+                productos funcionales. He trabajado en proyectos desde la
+                planificación hasta la ejecución, utilizando tecnologías como
+                HTML, CSS, JavaScript y frameworks de backend como Node.js y
+                .NET.
+              </p>
+              <p>
+                Mi misión es ayudar a las empresas a llevar su presencia digital
+                al siguiente nivel, resolviendo problemas complejos con
+                soluciones sencillas y elegantes.
+              </p>
+              <h4>¿Listo para transformar tu visión en realidad?</h4>
+            </div>
+            <div class="links">
               <a
-                class="perfil__redes__logo"
                 href="https://www.linkedin.com/in/pablosazycz/"
                 target="_blank"
               >
-                <img
-                  src="./img/logo_linkedin.svg"
-                  alt="Linkedin Logo"
-                  class="hover-svg"
-                  width="20%"
-                  height="20%"
-                />
-              </a>
-            </div>
-
-            <div class="perfil__redes__icons">
-              <a
-                class="perfil__redes__logo"
-                href="https://github.com/pablosazycz"
-                target="_blank"
-              >
-                <img
-                  src="./img/github_logo_2.svg"
-                  alt="GitHub Logo"
-                  class="hover-svg"
-                  width="20%"
-                  height="20%"
-                />
-              </a>
+                <i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/pablosazycz" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="mailto:pablosazycz@gmail.comhola"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
             </div>
           </div>
-        </div>
-        <div class="perfil__foto">
-          <img
-            class="perfil__foto__imagen"
-            alt="foto perfil"
-            src="https://avatars.githubusercontent.com/u/87151305?v=4"
-          />
-        </div>
+        </section>
+
+        <section class="exp">
+          <h3 class="timeline-title">Experiencia Profesional</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-point"></div>
+              <div class="timeline-content">
+                <h4>Desarrollador Backend en Omint Assistance</h4>
+                <p>Abril 2023 - Presente</p>
+                <p>
+                  Desarrollo de aplicaciones web utilizando HTML, CSS,
+                  JavaScript y .NET.
+                </p>
+                <p>
+                  Implementación de APIs y servicios backend en .NET y SQL
+                  Server.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-point"></div>
+              <div class="timeline-content">
+                <h4>Administrativo de Farmacia en Clínica Bazterrica</h4>
+                <p>Octubre 2015 - Marzo 2023</p>
+                <p>
+                  Activación de órdenes de compra e ingreso de mercadería al
+                  stock de la farmacia.
+                </p>
+                <p>
+                  Gestión de inventarios, control de stock y rotación de
+                  productos, interacción con proveedores, y coordinación de
+                  entregas.
+                </p>
+                <p>
+                  Organización de inventarios y atención a pacientes y
+                  visitadores médicos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
-    <!-- TODO: Agregar imagenes a los conocimientos -->
-    <section class="conocimientos">
-      <h2 class="subtitle">Conocimientos</h2>
-      <div class="conocimientos__tabla">
-        <table class="table">
-          <thead class="table__header">
-            <th>Falta Conocer</th>
-            <th>Lo que sé</th>
-            <th>Experto en</th>
-          </thead>
-          <tbody class="table__body">
-            <tr>
-              <td>CSS</td>
-              <td>HTML</td>
-              <td>Jugar a la play</td>
-            </tr>
-            <tr>
-              <td>JavaScript</td>
-              <td>Java</td>
-              <td>Steam</td>
-            </tr>
-            <tr>
-              <td>PHP</td>
-              <td>C#</td>
-              <td>Cuevana</td>
-            </tr>
-            <tr>
-              <td>Python</td>
-              <td>MySql</td>
-            </tr>
-            <tr>
-              <td>React</td>
-              <td>SQL</td>
-            </tr>
-            <tr>
-              <td>Node.js</td>
-              <td>Git</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-    <!-- Poner seccion de habilidades o skills -->
-    <section class="contacto">
-      <h2 class="subtitle">Contacto</h2>
-      <div class="contacto__form">
-        <div class="contacto__form__content">
-          <h3>Enviame tu mensaje</h3>
-          <!-- hacer que el form envie un mail -->
-          <form action="">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" />
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
-            <label for="mensaje">Mensaje</label>
-            <textarea
-              name="mensaje"
-              id="mensaje"
-              cols="30"
-              rows="10"
-            ></textarea>
-            <button type="submit">Enviar</button>
-          </form>
+
+      <section class="skills-fullwidth">
+        <h3>Habilidades Técnicas</h3>
+        <div class="skills-grid">
+          <div class="skill">
+            <h4><i class="fas fa-code"></i> Lenguajes de Programación</h4>
+            <p>HTML, CSS, JavaScript, Node.js, .NET, C#</p>
+          </div>
+          <div class="skill">
+            <h4><i class="fas fa-laptop-code"></i> Frameworks y Librerías</h4>
+            <p>React, Express, SignalR, AdminLTE</p>
+          </div>
+          <div class="skill">
+            <h4><i class="fas fa-database"></i> Bases de Datos</h4>
+            <p>SQL Server, MongoDB</p>
+          </div>
+          <div class="skill">
+            <h4><i class="fas fa-tools"></i> Herramientas y Otros</h4>
+            <p>Git, Postman, Visual Studio, VS Code</p>
+          </div>
         </div>
-        <div class="contacto__img">
-          <img
-            src="./img/paper_plane_flying-2.png"
-            alt="img contacto"
-            width="80%"
-            height="80%"
-          />
+      </section>
+
+      <section class="contacto">
+        <h2 class="subtitle">Contacto</h2>
+        <div class="contacto__form">
+          <div class="contacto__form__content">
+            <h3>Envíame tu mensaje</h3>
+            <form action="">
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" id="nombre" required />
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn-primary">
+                Enviar <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+          <div class="contacto__img">
+            <img
+              src="./assets/img/paper_plane_flying-2.png"
+              alt="Imagen de contacto"
+              class="img-responsive"
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <footer>
+        <div class="footer__content">
+          <div class="footer__info">
+            <h3>Información de contacto</h3>
+            <p>Dirección: </p>
+            <p>Teléfono: </p>
+            <p>Email: </p>
+          </div>
+          <div class="footer__social">
+            <h3>Redes sociales</h3>
+            <ul>
+              <li><a href="[Enlace a tu perfil de Facebook]" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="[Enlace a tu perfil de Twitter]" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="[Enlace a tu perfil de Instagram]" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          <div class="footer__copyright">
+            <p>&copy; 2024 - Pablo M. Sazycz - Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
