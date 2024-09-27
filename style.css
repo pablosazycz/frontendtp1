@@ -15,6 +15,7 @@ body {
   width: 100%;
 }
 
+
 /* .bio,
 .conocimientos,
 .contacto {
@@ -125,9 +126,75 @@ nav.nav {
   border-color: #ffd700;
 }
 
-.card {
+.container {
+  display: flex;
+  align-items: center;
+  justify-content:space-around
+}
+
+.bio {
+  flex-basis: 50%;
+  max-width: 50%;
+  color: white; /* Compatibilidad con fondo negro */
+}
+
+.exp {
+  display: flex;  
+  flex-basis: 50%;
+  max-width: 50%;
   position: relative;
-  width: 40%;
+  padding-right: 50px;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  padding-left: 10px; /* Espacio entre la línea y el contenido */
+  border-left: 2px solid rgba(235, 192, 4, 0.4) /* Línea de tiempo */
+}
+.timeline-title {
+  font-size: 24px;
+  color: #d3d3d3; /* Gris suave para combinar */
+  text-align: center;
+  margin-bottom: 20px;
+}
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50px; /* Espaciado entre los ítems */
+  position: relative;
+}
+
+.timeline-point {
+  width: 12px;
+  height: 12px;
+  background-color: #fff; /* Color del punto */
+  border-radius: 50%;
+  position: absolute;
+  left: -17px; /* Posición del punto en relación a la línea */
+  top: 10px; /* Alineación vertical */
+}
+
+.timeline-content {
+  margin-left: 20px;
+}
+
+.timeline-content h4 {
+  font-size: 18px;
+  margin: 0 0 5px;
+  color: #fff;
+}
+
+.timeline-content p {
+  font-size: 14px;
+  margin: 0;
+  color: #bbb; /* Texto más claro */
+}
+
+.card {
+
+  position: relative;
+  width: 75%;
   height: auto;
   border-radius: 10px;
   box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
@@ -147,6 +214,7 @@ nav.nav {
   padding: 20px;
   background: #c4c4c4;
   box-shadow: 2px 3px 5px rgba(235, 192, 4, 0.4);
+  color:#1a1919
 }
 
 .card .content .img {
@@ -232,89 +300,50 @@ nav.nav {
 .card .links a:nth-child(3):hover {
   color: #fe0000;
 }
-/* .perfil {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-width: 30%;
-height: 20vh;
-border:1px solid red;
-}
-.perfil__nombre {
-  font-size: 24px;
-  font-weight: bold;
-}
-.perfil__bio {
+
+
+.skills-fullwidth {
   width: 100%;
-  margin-right: 10px;
-}
-.perfil__foto {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-.perfil__foto__imagen {
-  width: 15rem;
-  height: 15rem;
-  border-radius: 1rem;
-  object-fit: cover;
-  image-rendering: smooth;
-}
-.perfil__redes {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  margin-top: 30px;
-
-  a {
-    text-decoration: none;
-  }
-}
-
-.perfil__redes__icons {
+  padding: 40px 0;
+  background-color: #1c1c1c; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
   text-align: center;
 }
-.hover-svg {
-  transition: filter 0.3s ease;
+
+.skills-fullwidth h3 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #fff; /* Color del título */
 }
 
-.perfil__redes__logo:hover .hover-svg {
-  filter: invert(50%);
-} */
-*/ .conocimientos__tabla {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 0.75rem;
-  padding: 1rem;
-  background-color: #3a3f41;
-  box-shadow: rgba(41, 28, 28, 0.7) 5px 5px 10px 5px;
-  border-radius: 1rem;
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.table {
-  width: 100%;
-  margin-top: 10px;
+.skill {
+  padding: 20px;
+  background-color: #2e2e2e; /* Fondo de las tarjetas de skills */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.table__header {
-  padding: 10px;
-  text-align: center;
-  background-color: #4a5053;
+.skill h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #f5c518; /* Resaltado amarillo */
 }
 
-td {
-  padding: 10px;
-  text-align: center;
-  border: 1px solid #4a5053;
+.skill p {
+  font-size: 16px;
+  color: #bbb;
 }
 
-td:hover {
-  background-color: #4a5053;
-  color: #fff;
-}
+
+
 
 .contacto__form {
   display: flex;
