@@ -67,7 +67,7 @@
       </section>
 
       <div class="container">
-        <section class="bio">
+        <section class="bio" id="bio">
           <div class="card">
             <div class="content">
               <span></span>
@@ -158,58 +158,78 @@
         <h3>Habilidades Técnicas</h3>
         <div class="skills-grid">
           <div class="skill">
-            <h4>Lenguajes de Programación</h4>
+            <h4><i class="fas fa-code"></i> Lenguajes de Programación</h4>
             <p>HTML, CSS, JavaScript, Node.js, .NET, C#</p>
           </div>
           <div class="skill">
-            <h4>Frameworks y Librerías</h4>
+            <h4><i class="fas fa-laptop-code"></i> Frameworks y Librerías</h4>
             <p>React, Express, SignalR, AdminLTE</p>
           </div>
           <div class="skill">
-            <h4>Bases de Datos</h4>
+            <h4><i class="fas fa-database"></i> Bases de Datos</h4>
             <p>SQL Server, MongoDB</p>
           </div>
           <div class="skill">
-            <h4>Herramientas y Otros</h4>
-            <p>Git, Docker, Postman, Visual Studio, VS Code</p>
+            <h4><i class="fas fa-tools"></i> Herramientas y Otros</h4>
+            <p>Git, Postman, Visual Studio, VS Code</p>
           </div>
         </div>
       </section>
 
-      <!-- <section class="contacto">
+      <section class="contacto">
         <h2 class="subtitle">Contacto</h2>
         <div class="contacto__form">
           <div class="contacto__form__content">
-            <h3>Enviame tu mensaje</h3>
+            <h3>Envíame tu mensaje</h3>
             <form action="">
               <label for="nombre">Nombre</label>
-              <input type="text" name="nombre" id="nombre" />
+              <input type="text" name="nombre" id="nombre" required />
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" />
+              <input type="email" name="email" id="email" required />
               <label for="mensaje">Mensaje</label>
               <textarea
                 name="mensaje"
                 id="mensaje"
                 cols="30"
                 rows="10"
+                required
               ></textarea>
-              <button type="submit">Enviar</button>
+              <button type="submit" class="btn btn-primary">
+                Enviar <i class="fas fa-paper-plane"></i>
+              </button>
             </form>
           </div>
           <div class="contacto__img">
             <img
               src="./assets/img/paper_plane_flying-2.png"
-              alt="img contacto"
-              width="80%"
-              height="80%"
+              alt="Imagen de contacto"
+              class="img-responsive"
             />
           </div>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <footer>
-        <p>Trabajo practico 1 - Front End</p>
-      </footer> -->
+      <footer>
+        <div class="footer__content">
+          <div class="footer__info">
+            <h3>Información de contacto</h3>
+            <p>Dirección: [Tu dirección]</p>
+            <p>Teléfono: [Tu teléfono]</p>
+            <p>Email: </p>
+          </div>
+          <div class="footer__social">
+            <h3>Redes sociales</h3>
+            <ul>
+              <li><a href="[Enlace a tu perfil de Facebook]" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="[Enlace a tu perfil de Twitter]" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="[Enlace a tu perfil de Instagram]" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          <div class="footer__copyright">
+            <p>&copy; 2024 - Pablo M. Sazycz - Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
