@@ -18,10 +18,6 @@
     <!-- averiguar si es necesario hacer el reset.css o el normalize.css -->
     <!-- <link rel="stylesheet" href="reset.css"> -->
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/187698871e.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <main>
@@ -29,11 +25,17 @@
         <nav class="nav">
           <div class="nav__logo">
             <img
+              class="nav__logo__img"
               src="./assets/img/logo.png"
               alt="Logo"
-              width="150px"
-              height="45px"
             />
+          </div>
+          <div class="nav__toggle-container">
+            <button class="nav__toggle" aria-label="Abrir menú">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
           </div>
           <ul class="nav__list">
             <li class="nav__item">
@@ -93,6 +95,20 @@
                 soluciones sencillas y elegantes.
               </p>
               <h4>¿Listo para transformar tu visión en realidad?</h4>
+            </div>
+            <div class="links__mobile">
+              <a
+                href="https://www.linkedin.com/in/pablosazycz/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/pablosazycz" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="mailto:pablosazycz@gmail.comhola"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
             </div>
             <div class="links">
               <a
@@ -181,7 +197,7 @@
         <div class="contacto__form">
           <div class="contacto__form__content">
             <h3>Envíame tu mensaje</h3>
-            <form action="">
+            <form id="formulario"class="form">
               <label for="nombre">Nombre</label>
               <input type="text" name="nombre" id="nombre" required />
               <label for="email">Email</label>
@@ -194,13 +210,19 @@
                 rows="10"
                 required
               ></textarea>
-              <button type="submit" class="btn btn-primary">
+              <div id="error"></div>
+              <button id="enviar-btn" class="btn" type="button">
                 Enviar <i class="fas fa-paper-plane"></i>
               </button>
             </form>
+            <div id="mensaje-enviado" class="mensaje-enviado">
+              Mensaje enviado con éxito
+            </div>
           </div>
+
           <div class="contacto__img">
             <img
+              id="imagen-contacto"
               src="./assets/img/paper_plane_flying-2.png"
               alt="Imagen de contacto"
               class="img-responsive"
@@ -213,23 +235,42 @@
         <div class="footer__content">
           <div class="footer__info">
             <h3>Información de contacto</h3>
-            <p>Dirección: </p>
-            <p>Teléfono: </p>
-            <p>Email: </p>
+            <p>Buenos Aires, Argentina</p>
+            <p></p>
+            <p>pablosazycz@gmail.com</p>
           </div>
           <div class="footer__social">
             <h3>Redes sociales</h3>
             <ul>
-              <li><a href="[Enlace a tu perfil de Facebook]" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="[Enlace a tu perfil de Twitter]" target="_blank"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="[Enlace a tu perfil de Instagram]" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li>
+                <a href="[Enlace a tu perfil de Facebook]" target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="[Enlace a tu perfil de Twitter]" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="[Enlace a tu perfil de Instagram]" target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
             </ul>
           </div>
           <div class="footer__copyright">
-            <p>&copy; 2024 - Pablo M. Sazycz - Todos los derechos reservados.</p>
+            <p>
+              &copy; 2024 - Pablo M. Sazycz - Todos los derechos reservados.
+            </p>
           </div>
         </div>
       </footer>
     </main>
+    <script
+      src="https://kit.fontawesome.com/187698871e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
   </body>
 </html>
